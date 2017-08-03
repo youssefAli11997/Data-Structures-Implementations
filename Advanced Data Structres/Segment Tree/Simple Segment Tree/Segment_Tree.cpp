@@ -3,6 +3,7 @@
   Description : - A simple segment tree implementation without classes.
                 - The three basic functions of segment trees : build, update and query.
                 - A Helper function to print the elements.
+		- A main function to run the program.
                 - Assuming that The queries are to find sum of ranges.
 */
 #include <bits/stdc++.h>
