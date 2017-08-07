@@ -57,7 +57,7 @@ public class Graph {
 		for(int i = 0; i < countOfNodes; i++){
 			AdjNode current = list[i].head;
 			if(current != null){
-				System.out.print("Vertex " + i+ " is connected to:");
+				System.out.print("Vertex " + i+ " is connected to: ");
 				while(current != null){
 					System.out.print(current.destination +" ");
 					current = current.next;
@@ -65,5 +65,14 @@ public class Graph {
 				System.out.println();
 			}
 		}
+	}
+	
+	public static void main(String[] args){
+		// assuming to be unweighed graph
+		Graph graph = new Graph(5);
+		graph.AddEdge(1, 3);
+		graph.AddBiEdge(1, 2);
+		graph.AddBiEdge(3,4);
+		graph.print();
 	}
 }
